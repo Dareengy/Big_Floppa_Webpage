@@ -1,3 +1,4 @@
+  
 /* Base styles */
 * {
     padding: 0;
@@ -118,6 +119,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .showM>div {
@@ -178,20 +180,37 @@ footer {
 }
 
 footer p {
-    padding: 25px 0px 25px 15px;
+    padding: 55px 0px 25px 15px;
 }
 
 /* Media Queries */
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
-    .left {
-        width: 30%;
-        margin-left: 10%;
+/* Extra X-large devices (Xlarge desktops, 1201px and up) */
+@media (min-width: 1201px) and (max-width: 1516px) {
+ 
+    .left,
+    .right {
+        float: none;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
     }
 
+    .links-container {
+        top: 10px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  
+    .left,
     .right {
-        width: 55%;
+        float: none;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
     }
 
     .links-container {
@@ -201,13 +220,13 @@ footer p {
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-    .left {
-        width: 40%;
-        margin-left: 5%;
-    }
-
+  
+    .left,
     .right {
-        width: 50%;
+        float: none;
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
     }
 
     .brand-title {
